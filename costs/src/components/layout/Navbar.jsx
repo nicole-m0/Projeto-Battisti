@@ -6,15 +6,17 @@ import logo from '../../img/costs_logo.png';
 function Navbar() {
     return(
         <nav className={styles.navbar}>
+            <Container>
             <div className={styles.logo}>
                 <img src={logo} alt="Costs Logo" />
             </div>
             <ul className={styles.list}>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
-                <li><Link to="/company">Company</Link></li>
-                <li><Link to="/newproject">New Project</Link></li>
+                <li className={styles.item}><Link to="/">Home</Link></li>
+                <li className={styles.item}><Link to="/projects">Projetos</Link></li>
+                <li className={styles.item}><Link to="/contact">Contato</Link></li>
+                <li className={styles.item}><Link to="/company">Empresa</Link></li>
             </ul>
+            </Container>
         </nav>  
     )
 }
